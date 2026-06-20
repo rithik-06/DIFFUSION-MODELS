@@ -48,3 +48,4 @@ t = torch.randint(0, T, (8,))
 xt, noise = forward_diffusion(x0, t)
 
 print(xt.shape)
+
