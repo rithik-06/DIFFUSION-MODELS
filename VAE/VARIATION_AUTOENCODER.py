@@ -29,4 +29,4 @@ class VAE(nn.Module):
         mu, logvar = h.chunk(2, dim=-1)  # Split into mean and log-variance
         z = self.reparameterize(mu, logvar)
         return self.decoder(z), mu, logvar  
-    
+     
